@@ -1,0 +1,102 @@
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 700px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    width: 80px;
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+}
+
+.btn:hover {
+    background-color: darkblue;
+}
+
+.year-btn {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.month-btn, .year-btn {
+    position: relative;
+}
+
+.dropdown {
+    width: 100px;
+    background-color: #fff;
+    color: black;
+    font-size: 18px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+    display: none;
+}
+
+.dropdown.show {
+    display: block;
+}
+
+.dropdown .dropdown-item {
+    padding: 5px 0;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.dropdown .dropdown-item:hover {
+    background-color: steelblue;
+    color: #fff;
+    opacity: 1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+}
+
+.caldates .days .dayname {
+    background-color: steelblue;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.caldates .days .day {
+    width: 85px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid steelblue;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 3px;
+    float: left;
+}
+
+.caldays.days .day.blank {
+    background-color: white;
+    border: none;
+}

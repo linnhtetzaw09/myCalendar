@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calendar</title>
+    <link href="./style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <div class="btn month-btn" onclick="$('#months').toggle()">
+            <span id="curmonth">Month</span>
+            <div id="months" class="months dropdown">
+                <div class="dropdown-item">Jan</div>
+                <div class="dropdown-item">Feb</div>
+                <div class="dropdown-item">March</div>
+                <div class="dropdown-item">April</div>
+                <div class="dropdown-item">May</div>
+            </div>
+        </div>
+        
+        <div class="btn year-btn">
+            <span id="curyear">Year</span>
+            <div id="years" class="monyearsths dropdown">
+                <div class="dropdown-item">2000</div>
+                <div class="dropdown-item">2001</div>
+                <div class="dropdown-item">2002</div>
+                <div class="dropdown-item">2003</div>
+                <div class="dropdown-item">2004</div> 
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="caldates">
+            <div class="days">
+                <label class="day dayname">Sun</label>
+                <label class="day dayname">Mon</label>
+                <label class="day dayname">Tue</label>
+                <label class="day dayname">Wed</label>
+                <label class="day dayname">Thurs</label>
+                <label class="day dayname">Friday</label>
+                <label class="day dayname">Sat</label>
+            </div>
+
+            <div class="clear"></div>
+
+            <div id="caldays" class="caldays days">
+                <label class="day">1</label>
+                <label class="day">2</label>
+                <label class="day">3</label>
+                <label class="day">4</label>
+                <label class="day">5</label>
+                <label class="day">6</label>
+                <label class="day">7</label>
+                <label class="day">8</label>
+                <label class="day">9</label>
+                <label class="day">10</label>
+                <label class="day">11</label>
+                <label class="day">12</label>
+                <label class="day">13</label>
+                <label class="day">14</label>
+                <label class="day">15</label>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" type="text/javascript"></script>
+    <script src="./app.js" type="text/javascript"></script>
+
+</body>
+</html>
